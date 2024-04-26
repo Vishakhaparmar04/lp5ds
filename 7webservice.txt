@@ -1,0 +1,5 @@
+Proj → “web service"
+New → web service   Clean&test
+Proj → "web client"
+New → web service client 
+client → source packages → new servelet
