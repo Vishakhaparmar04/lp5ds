@@ -1,0 +1,70 @@
+Assignment 1: RMI
+Terminal 1:
+javac *.java
+rmic AddServerImpl
+
+Terminal 2:
+rmiregistry
+
+Terminal 3:
+java AddServer
+
+Terminal 4:
+java AddClient 127.0.0.1 5 8
+
+
+---------------------------------------------------------
+
+Assignment 2: MPJ
+
+export MPJ_HOME="path to folder mpj-v0_44"
+export PATH=$MPJ_HOME/bin:$PATH
+javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
+$MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
+
+
+---------------------------------------------------------------------
+
+Assignment 3: Corba
+
+
+Terminal 1: 
+idlj -fall ReverseModule.idl
+javac *.java ReverseModule/*.java
+orbd -ORBInitialPort 1056
+
+Terminal 2:
+java ReverseServer -ORBInitialPort 1056
+
+Terminal 3:
+java ReverseClient -ORBInitialPort 1056 -ORBInitialHost localhost
+
+
+---------------------------------------------------------------------
+
+Assignment 4: Berkeley
+
+javac BerkeleyAlgorithm.java
+java BerkeleyAlgorithm
+
+---------------------------------------------------------------------
+
+Assignment 5: Token Ring
+
+javac tokenring.java
+java tokenring
+
+---------------------------------------------------------------------
+
+Assignment 6: Bully/Ring
+
+javac bully.java
+java bully
+
+
+javac ring.java
+java ring
+
+----------------------------------------------------------------------
+Assignment 7: Web App
+
